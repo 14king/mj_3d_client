@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mj_3d_client.Plugins", "mj_3d_client.Plugins.csproj", "{B358E77A-A622-56AF-8339-C354454E09BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mj_3d_client", "mj_3d_client.csproj", "{65A781E6-A66C-2ADB-6BB7-71A6438EB035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mj_3d_client.Editor", "mj_3d_client.Editor.csproj", "{BEA9FD8E-0E2C-1A78-29B3-19E695F9BE9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B358E77A-A622-56AF-8339-C354454E09BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B358E77A-A622-56AF-8339-C354454E09BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B358E77A-A622-56AF-8339-C354454E09BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B358E77A-A622-56AF-8339-C354454E09BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A781E6-A66C-2ADB-6BB7-71A6438EB035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A781E6-A66C-2ADB-6BB7-71A6438EB035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A781E6-A66C-2ADB-6BB7-71A6438EB035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A781E6-A66C-2ADB-6BB7-71A6438EB035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA9FD8E-0E2C-1A78-29B3-19E695F9BE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA9FD8E-0E2C-1A78-29B3-19E695F9BE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA9FD8E-0E2C-1A78-29B3-19E695F9BE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA9FD8E-0E2C-1A78-29B3-19E695F9BE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
