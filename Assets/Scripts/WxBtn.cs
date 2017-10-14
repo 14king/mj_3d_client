@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Newtonsoft.Json.Linq;
 
 public class WxBtn : MonoBehaviour {
 
@@ -47,7 +48,18 @@ public class WxBtn : MonoBehaviour {
         else
         {
             Debug.Log(getData.text);
-            SceneManager.LoadScene("hall");
+            JObject obj = JObject.Parse(getData.text);
+
+            string errmsg = obj["errmsg"].ToString();
+            if(errmsg == "success"){
+                string token = obj["token"].ToString();
+                Account.GetInstance().token = token;
+                Debug.Log("登陆成功：token=" + token);
+                SceneManager.LoadScene("hall");
+            }
+            else{
+                Debug.Log("登陆失败：" + errmsg);
+            }
         }
     }
 }
