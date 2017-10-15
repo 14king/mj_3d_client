@@ -38,7 +38,7 @@ public class WxBtn : MonoBehaviour {
     IEnumerator SendGet()
     {
         string url = Account.GetInstance().http_url;
-        url = url + "account=" + Account.GetInstance().account_ + "&password=" + Account.GetInstance().password_;
+        url = url + "login?account=" + Account.GetInstance().account_ + "&password=" + Account.GetInstance().password_;
         WWW getData = new WWW(url);
         yield return getData;
         if (getData.error != null)

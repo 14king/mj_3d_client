@@ -26,7 +26,8 @@ public class Hall : MonoBehaviour {
 	private void OnClickCreateLow()
 	{
 		Debug.Log("创建新手房");
-	}
+        transform.FindChild("create_room_panel").gameObject.SetActive(true);
+    }
 
 	private void OnClickCreateMiddle()
 	{

@@ -58,6 +58,12 @@ namespace NetWork{
 			socket.Close();
 		}
 
+        public void Close()
+        {
+            _connected = false;
+            socket.Close();
+        }
+
 		public void BeginReceive(){
 			try{
 				int max = 2;
@@ -76,7 +82,7 @@ namespace NetWork{
 				int bytesRead = socket.EndReceive(ar);
 				Debug.Log(String.Format("recv {0}",bytesRead));
 				if (bytesRead <= 0) {
-					BeginReceive ();
+					Close();
 					return;
 				}
 
@@ -108,11 +114,13 @@ namespace NetWork{
                 _head_len = 0;
                 _body_len = 0;
                 _buff_pos = 0;
-			}
+                BeginReceive();
+            }
 			catch(Exception e){
 				Debug.Log (e.ToString ());
+                Close();
+                return;
 			}
-			BeginReceive ();
 		}
 
 		public JObject PeekMsg(){

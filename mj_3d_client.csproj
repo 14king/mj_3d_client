@@ -58,6 +58,9 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets/UnityPackages/JsonNet/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
@@ -71,6 +74,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Account.cs" />
     <Compile Include="Assets\Scripts\AppDelegate.cs" />
+    <Compile Include="Assets\Scripts\CreateRoom.cs" />
+    <Compile Include="Assets\Scripts\Hall.cs" />
+    <Compile Include="Assets\Scripts\NetWork.cs" />
     <Compile Include="Assets\Scripts\WxBtn.cs" />
     <Compile Include="Assets\Slua\LuaObject\Custom\BindCustom.cs" />
     <Compile Include="Assets\Slua\LuaObject\Custom\LuaDelegate_Deleg_GetBundleInfoDelegate.cs" />
